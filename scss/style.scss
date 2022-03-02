@@ -1,0 +1,119 @@
+@import 'null';
+@import url(https://fonts.googleapis.com/css?family=Mochiy+Pop+P+One:regular);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+body {
+	font-family: 'Mochiy Pop P One';
+	background-color: #222;
+	color: rgb(219, 217, 213);
+}
+
+input {
+	&::placeholder {
+		font-family: 'Roboto';
+		font-weight: 600;
+	}
+}
+
+.header {
+	// .header__content
+	padding-top: 10px;
+	&__content {
+		display: flex;
+		justify-content: space-between;
+	}
+	// .header__column
+	&__column {
+	}
+	// .header__logo
+	&__logo {
+		font-size: 20px;
+	}
+	// .header__search-wraper
+	&__search-wraper {
+	}
+	// .header__search
+	&__search {
+		padding: 8px;
+		width: 180px;
+		border-radius: 4px;
+	}
+}
+.container {
+	max-width: 1230px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.main {
+	// .main__content
+	&__content {
+	}
+	// .main__movie-list
+	&__movie-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+.movie-list {
+	// .movie-list__card
+	padding-top: 20px;
+	max-width: 1000px;
+	margin: 0 auto;
+
+	&__card {
+		width: 250px;
+		height: 500px;
+		margin: 0 20px;
+	}
+	// .movie-list__top
+	&__top {
+		position: relative;
+		height: 400px;
+	}
+	// .movie-list__ball
+	&__ball {
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #222;
+		border: 1.2px solid rgb(91, 240, 111);
+
+		height: 30px;
+		width: 30px;
+		border-radius: 50%;
+		span {
+			font-family: 'Roboto';
+			font-size: 13px;
+			font-weight: 400;
+		}
+	}
+	// .movie-list__poster
+	&__poster {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	// .movie-list__bottom
+	&__bottom {
+		padding-top: 12px;
+		font-family: 'Roboto';
+		font-weight: 500;
+	}
+	// .movie-list__title
+	&__title {
+		font-weight: 600;
+		font-size: 16px;
+	}
+	// .movie-list__suport
+	&__suport {
+		display: flex;
+		color: rgb(250, 233, 76);
+		li {
+			margin: 0 10px 0 0;
+		}
+	}
+}
